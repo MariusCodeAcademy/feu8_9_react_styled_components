@@ -6,6 +6,10 @@ const GlobalStyle = createGlobalStyle`
 }
 
 html {
+  --primary: #22c55e;
+}
+
+html {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 

@@ -10,7 +10,10 @@ const IconPlace = styled.div`
   grid-row: span 2;
 `;
 const Title = styled.h3``;
-const Text = styled.p``;
+const Text = styled.p`
+  font-weight: 500;
+  color: #556987;
+`;
 
 export default function GainItem(props) {
   return (

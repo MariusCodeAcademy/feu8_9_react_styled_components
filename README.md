@@ -8,4 +8,4 @@
 
 1. `npm i font-awesome@^4`
 2. importuojam FA css i main.jsx `import 'font-awesome/css/font-awesome.min.css';`
-3. generuojam icon elementus `<i class="fa fa-envelope" aria-hidden="true"></i>`
+3. generuojam icon elementus `<i className="fa fa-envelope" aria-hidden="true"></i>`
