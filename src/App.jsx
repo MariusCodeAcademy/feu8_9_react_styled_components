@@ -6,10 +6,16 @@ const MainTitle = styled.h1`
   color: tomato;
 `;
 
+const Wrap = styled.div`
+  padding-top: 30px;
+  margin-left: 20px;
+  margin-right: 20px;
+`;
+
 export default function App() {
   return (
-    <div>
+    <Wrap>
       <MainTitle>Styled components</MainTitle>
-    </div>
+    </Wrap>
   );
 }
