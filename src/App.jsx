@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import Btn, { GrayBtn } from './components/UI/Btn.styled';
 import GlobalStyle from './components/GlobalStyle';
+import GainMore from './components/GainMore';
 
 const MainTitle = styled.h1`
   font-weight: normal;
@@ -19,12 +20,13 @@ export default function App() {
     <Wrap>
       <GlobalStyle />
       <MainTitle>Styled components</MainTitle>
-      <Btn>Learn more</Btn>
-      {/* <Btn secondary>Read more</Btn> */}
+      <GainMore />
+      {/* <Btn>Learn more</Btn>
+      
       <GrayBtn>Read more</GrayBtn>
       <Btn as='a' href='#'>
         Nuoroda kaip button
-      </Btn>
+      </Btn> */}
     </Wrap>
   );
 }
