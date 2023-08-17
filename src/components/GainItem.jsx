@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import Icon from './UI/Icon';
 
 const Grid = styled.div`
   display: grid;
@@ -14,7 +15,9 @@ const Text = styled.p``;
 export default function GainItem(props) {
   return (
     <Grid>
-      <IconPlace>{props.icon}</IconPlace>
+      <IconPlace>
+        <Icon>{props.icon}</Icon>
+      </IconPlace>
       <Title>{props.title}</Title>
       <Text>{props.descr}</Text>
     </Grid>
