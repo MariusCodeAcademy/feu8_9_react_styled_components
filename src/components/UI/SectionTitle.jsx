@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const Wrap = styled.div`
-  text-align: center;
+  text-align: ${(props) => (props.left ? 'left' : 'center')};
   margin-bottom: 48px;
 `;
 const Pill = styled.p`
@@ -25,7 +25,7 @@ const Subtitle = styled.p`
 
 export default function SectionTitle(props) {
   return (
-    <Wrap>
+    <Wrap left={props.left}>
       <Pill>{props.pill}</Pill>
       <Title>{props.title}</Title>
       <Subtitle>{props.subtitle}</Subtitle>
