@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import Btn, { GrayBtn } from './components/UI/Btn.styled';
 import GlobalStyle from './components/GlobalStyle';
 import GainMore from './components/GainMore';
 

@@ -13,16 +13,26 @@ const Wrap = styled.div`
     background-color: tomato;
   }
 
-  & i {
+  /* & i {
     font-size: 21px;
     color: white;
-  }
+  } */
+`;
+
+const StyledIcon = styled.i.attrs((props) => ({
+  className: `fa fa-${props.icon}`,
+  title: 'hello',
+}))`
+  font-size: 21px;
+  color: white;
 `;
 
 export default function Icon(props) {
   return (
     <Wrap>
-      <i className={`fa fa-${props.children}`} aria-hidden='true'></i>
+      <StyledIcon icon={props.children} />
     </Wrap>
   );
 }
+
+// <i className={`fa fa-${props.children}`} aria-hidden='true'></i>
