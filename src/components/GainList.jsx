@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react';
-import GainItem from './GainItem';
+import { useEffect, useState } from 'react';
+// import GainItem from './GainItem';
 
 export default function GainList() {
   const [items, setItems] = useState([]);
@@ -16,16 +16,5 @@ export default function GainList() {
       });
   }, []);
 
-  return (
-    <div className='list'>
-      {items.map((iObj) => (
-        <GainItem
-          key={iObj.id}
-          title={iObj.title}
-          descr={iObj.descr}
-          icon={iObj.icon}
-        />
-      ))}
-    </div>
-  );
+  return <div className='list'>list</div>;
 }
