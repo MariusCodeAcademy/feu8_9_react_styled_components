@@ -1,9 +1,15 @@
-import './App.css';
+import styled from 'styled-components';
+
+const MainTitle = styled.h1`
+  font-weight: normal;
+  text-transform: uppercase;
+  color: tomato;
+`;
 
 export default function App() {
   return (
     <div>
-      <h1>New topic</h1>
+      <MainTitle>Styled components</MainTitle>
     </div>
   );
 }
