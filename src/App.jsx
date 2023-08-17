@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import Btn from './components/UI/Btn.styled';
 
 const MainTitle = styled.h1`
   font-weight: normal;
@@ -16,6 +17,8 @@ export default function App() {
   return (
     <Wrap>
       <MainTitle>Styled components</MainTitle>
+      <Btn>Learn more</Btn>
+      <Btn secondary>Read more</Btn>
     </Wrap>
   );
 }
